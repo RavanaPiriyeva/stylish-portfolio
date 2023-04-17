@@ -1,0 +1,42 @@
+.btn, #hero .hero-body a {
+  padding: 20px 40px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#hero {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1098039216), rgba(255, 255, 255, 0.1294117647)), url(../../img/bg-masthead.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Source Sans Pro", sans-serif;
+  position: relative;
+  color: #212529;
+}
+#hero .hero-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#hero .hero-body h1 {
+  font-size: 88px;
+  margin-bottom: 4px;
+}
+#hero .hero-body h3 {
+  font-size: 28px;
+  font-style: italic;
+  margin-bottom: 68px;
+}
+#hero .hero-body a {
+  color: #ffffff;
+  background-color: #1D809F;
+}/*# sourceMappingURL=style.css.map */

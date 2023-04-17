@@ -1,0 +1,38 @@
+@import "./mixin.scss";
+@import "./variable.scss";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#hero {
+  background-image:linear-gradient( #ffffff1c ,#ffffff21), url(../../img/bg-masthead.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: $main-font;
+  position: relative;
+  color: #212529;
+
+  .hero-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    h1 {
+      font-size: 88px;
+      margin-bottom: 4px;
+    }
+    h3{
+        font-size: 28px;
+        font-style: italic;
+        margin-bottom: 68px;
+    }
+    a{
+        @include blue-btn;
+    }
+  }
+}

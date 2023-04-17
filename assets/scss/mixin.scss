@@ -1,0 +1,7 @@
+@import "./variable.scss";
+@import "./extend.scss";
+@mixin blue-btn{
+    @extend .btn;
+    color: $white-color;
+    background-color:$blue-color ;
+}
