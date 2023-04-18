@@ -1,7 +1,8 @@
-.btn, #hero .hero-body a {
+.btn, main #hero .hero-body a, main #about .about-body a.btn, main #welcom .welcom-body a, main #action .action-body a.white-btn, main #action .action-body a.dark-btn {
   padding: 20px 40px;
   text-decoration: none;
   border-radius: 5px;
+  display: inline-block;
 }
 
 * {
@@ -10,8 +11,8 @@
   box-sizing: border-box;
 }
 
-#hero {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.1098039216), rgba(255, 255, 255, 0.1294117647)), url(../../img/bg-masthead.jpg);
+main #hero {
+  background-image: linear-gradient(#ffffff1c, #ffffff21), url(../../img/bg-masthead.jpg);
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
@@ -20,23 +21,287 @@
   position: relative;
   color: #212529;
 }
-#hero .hero-body {
+
+main #hero .hero-body {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
-#hero .hero-body h1 {
+
+main #hero .hero-body h1 {
   font-size: 88px;
   margin-bottom: 4px;
 }
-#hero .hero-body h3 {
+
+@media only screen and (max-width: 768px) {
+  main #hero .hero-body h1 {
+    font-size: 64px;
+  }
+}
+
+main #hero .hero-body h3 {
   font-size: 28px;
   font-style: italic;
   margin-bottom: 68px;
 }
-#hero .hero-body a {
+
+main #hero .hero-body a {
   color: #ffffff;
   background-color: #1D809F;
-}/*# sourceMappingURL=style.css.map */
+}
+
+main #about {
+  padding: 120px 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+main #about .about-body {
+  text-align: center;
+}
+
+main #about .about-body h2 {
+  font-size: 32px;
+  margin-bottom: 8px;
+  color: #212529;
+}
+
+main #about .about-body p {
+  font-size: 20px;
+  margin-bottom: 60px;
+  font-weight: 300;
+}
+
+main #about .about-body p .unsplash {
+  color: #1D809F;
+}
+
+main #about .about-body #hero .hero-body a, main #hero .hero-body #about .about-body a, main #about .about-body a.btn, main #about .about-body #welcom .welcom-body a, main #welcom .welcom-body #about .about-body a, main #about .about-body #action .action-body a.white-btn, main #action .action-body #about .about-body a.white-btn, main #about .about-body #action .action-body a.dark-btn, main #action .action-body #about .about-body a.dark-btn {
+  color: #ffffff;
+  background-color: #212529;
+}
+
+main #offer {
+  background-color: #1D809F;
+}
+
+main #offer .offer-body {
+  padding: 120px 0;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+main #offer .offer-body .offer-title {
+  margin-bottom: 50px;
+}
+
+main #offer .offer-body .offer-title h3 {
+  color: #ecb808;
+  font-size: 16px;
+}
+
+main #offer .offer-body .offer-title h2 {
+  font-size: 48px;
+}
+
+main #offer .offer-body .offer-item {
+  margin-bottom: 30px;
+}
+
+main #offer .offer-body .offer-item .icon {
+  width: 110px;
+  height: 110px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  color: #1D809F;
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+
+main #offer .offer-body .offer-item h4 {
+  font-size: 24px;
+}
+
+main #offer .offer-body .offer-item p {
+  font-weight: 400;
+  margin-top: 10px;
+  opacity: 0.7;
+  letter-spacing: 0.2px;
+}
+
+main #welcom {
+  background-image: linear-gradient(#ffffff1a, #ffffff0a), url("../../img/velcom.jpg");
+  height: 95vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+main #welcom .welcom-body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+main #welcom .welcom-body h2 {
+  font-size: 56px;
+  color: #212529;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+main #welcom .welcom-body a {
+  color: #ffffff;
+  background-color: #1D809F;
+}
+
+main #portfolio {
+  padding: 120px 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+main #portfolio .portfolio-title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+main #portfolio .portfolio-title h3 {
+  color: #ecb808;
+  font-size: 16px;
+}
+
+main #portfolio .portfolio-title h2 {
+  font-size: 48px;
+}
+
+main #portfolio .portfolio-item {
+  position: relative;
+  transition: all 0.5s;
+}
+
+@media only screen and (max-width: 992px) {
+  main #portfolio .portfolio-item {
+    margin-bottom: 20px;
+  }
+}
+
+main #portfolio .portfolio-item .portfolio-img {
+  height: 100%;
+}
+
+main #portfolio .portfolio-item .portfolio-img img {
+  max-width: 100%;
+  height: 100%;
+}
+
+main #portfolio .portfolio-item .portfolio-item-text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  color: #ffffff;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 80px;
+}
+
+main #portfolio .portfolio-item .portfolio-item-text h2 {
+  font-size: 13px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+main #portfolio .portfolio-item .portfolio-item-text p {
+  font-size: 19px;
+  font-weight: 300;
+}
+
+main #portfolio .portfolio-item:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+  background-color: #1D809F;
+}
+
+main #portfolio .portfolio-item:hover .portfolio-item-text {
+  background-color: #1d819fa4;
+}
+
+main #action {
+  padding: 120px 0;
+  background-color: #1D809F;
+}
+
+main #action .action-body {
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+}
+
+main #action .action-body .action-title {
+  margin-bottom: 25px;
+}
+
+main #action .action-body .action-title h2 {
+  font-size: 32px;
+  color: #ffffff;
+}
+
+main #action .action-body a.white-btn {
+  color: #212529;
+  background-color: #ffffff;
+  margin-right: 24px;
+}
+
+@media only screen and (max-width: 404px) {
+  main #action .action-body a.white-btn {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+main #action .action-body a.dark-btn {
+  color: #ffffff;
+  background-color: #212529;
+}
+
+main #map iframe {
+  border: none;
+}
+
+footer {
+  padding: 80px 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+footer .footer-top {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 48px;
+}
+
+footer .footer-top .icon {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  background-color: #1D809F;
+  color: #ffffff;
+  font-size: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footer-bottom {
+  font-size: 14px;
+  color: grey;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

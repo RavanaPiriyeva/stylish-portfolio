@@ -1,1 +1,11 @@
-{"version":3,"sources":["../scss/extend.scss","mixin.css"],"names":[],"mappings":"AAAA;EACI,kBAAA;EACA,qBAAA;EACA,kBAAA;ACCJ","file":"mixin.css"}
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,IAAI,CAAA;EACA,OAAO,EAAE,SAAS;EAClB,eAAe,EAAE,IAAI;EACrB,aAAa,EAAE,GAAG;CACrB",
+    "sources": [
+        "../scss/mixin.scss",
+        "../scss/variable.scss",
+        "../scss/extend.scss"
+    ],
+    "names": [],
+    "file": "mixin.css"
+}

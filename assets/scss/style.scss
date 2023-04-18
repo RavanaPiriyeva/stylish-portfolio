@@ -5,34 +5,233 @@
   margin: 0;
   box-sizing: border-box;
 }
-#hero {
-  background-image:linear-gradient( #ffffff1c ,#ffffff21), url(../../img/bg-masthead.jpg);
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  font-family: $main-font;
-  position: relative;
-  color: #212529;
+main {
+  #hero {
+    background-image: linear-gradient(#ffffff1c, #ffffff21), url(../../img/bg-masthead.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: $main-font;
+    position: relative;
+    color: #212529;
 
-  .hero-body {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    .hero-body {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
 
-    h1 {
-      font-size: 88px;
-      margin-bottom: 4px;
-    }
-    h3{
+      h1 {
+        font-size: 88px;
+        margin-bottom: 4px;
+        @media only screen and(max-width:768px) {
+          font-size: 64px;
+        }
+      }
+      h3 {
         font-size: 28px;
         font-style: italic;
         margin-bottom: 68px;
-    }
-    a{
+      }
+      a {
         @include blue-btn;
+      }
     }
+  }
+  #about {
+    padding: $section-padding;
+    font-family: $main-font;
+    .about-body {
+      text-align: center;
+      h2 {
+        font-size: 32px;
+        margin-bottom: 8px;
+        color: $dark-color;
+      }
+      p {
+        font-size: 20px;
+        margin-bottom: 60px;
+        font-weight: 300;
+        .unsplash {
+          color: $blue-color;
+        }
+      }
+      a.btn {
+        @include dark-btn;
+      }
+    }
+  }
+  #offer {
+    background-color: $blue-color;
+    .offer-body {
+      padding: $section-padding;
+      color: $white-color;
+      text-align: center;
+      font-family: $main-font;
+      .offer-title {
+        @include title;
+      }
+      .offer-item {
+        margin-bottom: 30px;
+        .icon {
+          width: 110px;
+          height: 110px;
+          background-color: $white-color;
+          border-radius: 50%;
+          color: $blue-color;
+          font-size: 36px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto 16px;
+        }
+        h4 {
+          font-size: 24px;
+        }
+        p {
+          font-weight: 400;
+          margin-top: 10px;
+          opacity: 0.7;
+          letter-spacing: 0.2px;
+        }
+      }
+    }
+  }
+
+  #welcom {
+    background-image: linear-gradient(#ffffff1a, #ffffff0a), url("../../img/velcom.jpg");
+    height: 95vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    .welcom-body {
+      font-family: $main-font;
+
+      h2 {
+        font-size: 56px;
+        color: $dark-color;
+        margin-bottom: 50px;
+        font-weight: 700;
+      }
+      a {
+        @include blue-btn;
+      }
+    }
+  }
+  #portfolio {
+    padding: $section-padding;
+    font-family: $main-font;
+    .portfolio-title {
+      @include title;
+      text-align: center;
+    }
+    .portfolio-item {
+      position: relative;
+      transition: all 0.5s;
+      @media only screen and(max-width:992px) {
+        margin-bottom: 20px;
+      }
+      .portfolio-img {
+        height: 100%;
+        img {
+          max-width: 100%;
+          height: 100%;
+        }
+      }
+
+      .portfolio-item-text {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        color: $white-color;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 80px;
+        h2 {
+          font-size: 13px;
+          margin-bottom: 8px;
+          text-transform: uppercase;
+        }
+        p {
+          font-size: 19px;
+          font-weight: 300;
+        }
+      }
+    }
+    .portfolio-item:hover {
+      transform: scale(0.9);
+      cursor: pointer;
+      background-color: $blue-color;
+      .portfolio-item-text {
+        background-color: #1d819fa4;
+      }
+    }
+  }
+
+  #action {
+    padding: $section-padding;
+    background-color: $blue-color;
+    .action-body {
+      font-family: $main-font;
+      text-align: center;
+      .action-title {
+        margin-bottom: 25px;
+
+        h2 {
+          font-size: 32px;
+          color: $white-color;
+        }
+      }
+      a.white-btn {
+        @include white-btn;
+        margin-right: 24px;
+        @media only screen and(max-width:404px){
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+      }
+      a.dark-btn {
+        @include dark-btn;
+      }
+    }
+  }
+  #map {
+    iframe {
+      border: none;
+    }
+  }
+}
+footer {
+  padding: 80px 0;
+  font-family: $main-font;
+  .footer-top {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 48px;
+    .icon {
+      width: 60px;
+      height: 60px;
+      margin: 10px;
+      background-color: $blue-color;
+      color: $white-color;
+      font-size: 25px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .footer-bottom {
+    font-size: 14px;
+    color: grey;
+    text-align: center;
   }
 }

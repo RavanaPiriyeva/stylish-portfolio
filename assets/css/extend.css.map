@@ -1,1 +1,9 @@
-{"version":3,"sources":["../scss/extend.scss","extend.css"],"names":[],"mappings":"AAAA;EACI,kBAAA;EACA,qBAAA;EACA,kBAAA;ACCJ","file":"extend.css"}
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAA;EACA,OAAO,EAAE,SAAS;EAClB,eAAe,EAAE,IAAI;EACrB,aAAa,EAAE,GAAG;EAClB,OAAO,EAAE,YAAY;CACxB",
+    "sources": [
+        "../scss/extend.scss"
+    ],
+    "names": [],
+    "file": "extend.css"
+}

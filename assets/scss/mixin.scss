@@ -1,7 +1,28 @@
 @import "./variable.scss";
 @import "./extend.scss";
-@mixin blue-btn{
+@mixin blue-btn {
     @extend .btn;
     color: $white-color;
-    background-color:$blue-color ;
+    background-color: $blue-color;
+}
+@mixin dark-btn {
+    @extend .btn;
+    color: $white-color;
+    background-color: $dark-color;
+}
+@mixin white-btn {
+    @extend .btn;
+    color: $dark-color;
+    background-color: $white-color;
+}
+
+@mixin title {
+    margin-bottom: 50px;
+    h3 {
+        color: $yellow-color;
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 48px;
+    }
 }
